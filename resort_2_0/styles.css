@@ -1,0 +1,97 @@
+/* Immersive Desktop Background */
+body {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('Backpic.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Card Geometry */
+.room-card {
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    border: none;
+}
+
+.room-card:hover {
+    transform: translateY(-8px);
+}
+
+/* Fixed Image Dimensions for Desktop Symmetry */
+.card-img-container {
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.card-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* UI Elements */
+.price-badge {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    background: #58a0d3; /* Logo Blue */
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.hover-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.4);
+    display: flex; align-items: center; justify-content: center;
+    color: white; opacity: 0; transition: 0.3s;
+}
+
+.card-img-container:hover .hover-overlay {
+    opacity: 1;
+}
+
+/* Lightbox Modal */
+.modal-overlay {
+    display: none; position: fixed; z-index: 9999;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.9);
+    justify-content: center; align-items: center; flex-direction: column;
+}
+
+.modal-content { max-width: 85%; max-height: 80%; border-radius: 10px; }
+
+.btn-primary {
+    background-color: #58a0d3;
+    border: none;
+    font-size: 0.85rem;
+}
+
+/* Ensure the page content doesn't get hidden under the fixed navbar */
+body {
+    padding-top: 70px; /* Adjust based on your navbar height */
+}
+
+/* Improve the Modal/Lightbox Close Button */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Responsive Fix: Ensure cards don't look squished on mobile */
+@media (max-width: 768px) {
+    .card-img-container {
+        height: 150px;
+    }
+}
+

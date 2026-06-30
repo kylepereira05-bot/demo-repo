@@ -1,0 +1,31 @@
+:root {
+    --primary-blue: #58a0d3; /* From your Logo */
+    --dark-overlay: rgba(0, 0, 0, 0.5);
+}
+
+body { font-family: 'Poppins', sans-serif; background-color: #f8f9fa; }
+
+/* Hero Section using your Backpic.jpg */
+.hero {
+    background: linear-gradient(var(--dark-overlay), var(--dark-overlay)), url('Backpic.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.navbar-brand img { border-radius: 50%; border: 2px solid white; }
+
+.form-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.btn-primary { background-color: var(--primary-blue); border: none; border-radius: 25px; }
+.btn-primary:hover { background-color: #4682b4; }
