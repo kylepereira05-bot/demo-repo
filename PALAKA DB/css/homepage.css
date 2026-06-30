@@ -1,0 +1,93 @@
+body{
+    background: url('../css/sunset.jpg') no-repeat center center fixed;
+    background-size: cover; }
+div.OP{
+    background: rgba(0, 0, 0, 0.5);
+    height: 0 auto;
+    margin: 0 ;
+    border: 50 color whitesmoke;
+}
+div.OP h1{
+font-size: 40px;
+color: whitesmoke;
+line-height:100%;
+}
+div.OP P{
+    font-size: 30px;
+    color: whitesmoke;
+    line-height:50%;
+    font-style: italic;
+    text-decoration:underline whitesmoke;
+    }
+div.homepagenotified{
+    display: flex;
+    flex-direction: row;
+}
+div.emailform{
+    margin-left: 20px;
+    background:black;
+    width:0 auto ;
+    height: 200px;
+}
+
+div.emailform h3{
+    margin-bottom: 40px;
+    color: whitesmoke;
+    font-size: 30px;
+    text-align: center; 
+}
+div.emailform p{
+    margin-bottom: 20px;
+    font-style: italic;
+    line-height: 20px;
+    font-size: 24px;
+    color:whitesmoke;
+    text-align: center;
+    text-decoration:underline whitesmoke;
+}
+div.video{
+    margin-left: 115px;
+}
+div.formgalon input{
+padding:7px 10px ;
+border:none ;
+border-radius:10px ;
+width: 50%;
+}
+div.formgalon button{ 
+    background: whitesmoke;
+    border:none ;
+border-radius:20px ;
+padding:7px 20px ;
+font-style: italic;
+margin-left: 10px;
+}
+.second{ 
+    background: whitesmoke;
+    border:none ;
+border-radius:20px ;
+padding:7px 20px ;
+font-style: italic;
+margin-left: 420px;
+width: 100px;
+
+}
+div.Socialcons{ 
+    margin-left: 0px;
+    background:black;
+    width:0 auto ;
+    height: 200px;
+    margin-top: 60px;
+    text-align: right;
+}
+div.APPS{
+    display: inline;
+    font-size: 30px;
+    height: 50px;
+    width: 50px;
+    color: whitesmoke;
+    background: black;
+    border-radius: 30px;
+margin-left: 20px;
+padding-top: 7px;
+}
